@@ -1,0 +1,296 @@
+  
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+.first-section{
+    width: 100%;
+    height: 200px;
+    background-image: url(Google-Pay.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.first-section input{
+    
+    width: 70%;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.632);
+    color: white;
+
+}
+input::placeholder{
+    color: white;
+    position: relative;
+    left: 30px;
+    
+}
+
+.section1{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.852);
+}
+.section1{
+    margin: 10px;
+
+}
+
+.section1 .detail{
+    color: white;
+    font-size: 12px;
+}
+
+.section1 button{
+    
+    padding: 5px 20px ;
+    color: white;
+    background-color: initial;
+    border-radius:30px;
+    border: 1px dotted gray;
+    font-size: 10px;
+
+}
+
+.section1 h5{
+    color: white;
+    font-size: 13px;
+    background-color: rgba(128, 128, 128, 0.374);
+    width: 200px;
+    height: 25px;
+    border-radius: 30px;
+    position:relative;
+    right:44px;
+}
+
+.section2 h3{
+    color: white;
+}
+
+.section2 .circle1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(235, 91, 19);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.section2 .circle2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(66, 19, 235);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.section2 .circle3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(235, 19, 170);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.section2 .circle4{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(19, 37, 235);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.section2 .circle5{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(19, 62, 235);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.section2 .circle6{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(235, 19, 55);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.section2 .circle7{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(19, 138, 235);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.section2 .circle8{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(235, 19, 19);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.section3 .circle-bus1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(85, 0, 255);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    border: 1.5px solid white;
+    font-weight: bold;
+}
+
+.section3 .circle-bus2{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    border: 1.5px solid white;
+    font-weight: bold;
+
+}
+
+.section4 .circle-bills1{
+
+    width: 50px;
+    height: 50px;
+    background-color: rgba(48, 108, 206, 0.4);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+  
+}
+
+.section4 .view-btn button{
+    padding: 7px 30px ;
+    background-color: initial;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: rgba(57, 57, 205, 0.911);
+    position: absolute;
+    left:35%;
+}
+
+.section5 .offers-circle1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(217, 255, 0);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5 .offers-circle2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5 .offers-circle3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section6 .loan-p{
+    position: relative;
+    bottom: 29px;
+}
+.section6 .apply-p{
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+.section2 p{
+    color: white;
+}
+
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background-image: url(images.jpg);
+    filter: grayscale(100%) brightness(80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
