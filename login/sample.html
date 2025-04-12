@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample website</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body id="body">
+    <section>
+        <div class="div" id="div">
+          <div class="form">
+            <h1 id="h1">Login Page</h1>
+             <form action="">
+             <input type="email" placeholder="✉️Enter your Email" id="email" required>
+             <input type="password" placeholder="🔑Enter your Password" id="pass" required>
+             <button type="button" id="btn" > Login</button>
+            </form>
+          </div>
+        </div>
+    </section>
+    
+</body>
+<script>
+ let btn = document.getElementById("btn");
+let div = document.getElementById("div");
+let h1 = document.getElementById("h1");
+let body = document.getElementById("body");
+
+let isrotate=false
+
+btn.onclick = function () {
+  if(!isrotate){
+     div.style.transform = 'rotateY(360deg)';
+     isrotate=true
+     h1.innerHTML="Sign page"
+     h1.style.transition="all 0.8s ease-in-out"
+     btn.innerHTML="Sign"
+  }
+  else{
+     div.style.transform = "rotateY(0deg)"
+     isrotate=false
+     h1.innerHTML="login page"
+     btn.innerHTML="login"
+  }
+}
+
+</script>
+</html> 
+
