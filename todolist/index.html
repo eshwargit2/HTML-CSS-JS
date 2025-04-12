@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+   
+</head>
+<style>
+
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    background-color: black;
+    display: flex;
+}
+ul{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+li{
+    list-style: none;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px;
+    box-shadow: 0px 0px 10px green;
+    font-size: 20px;
+   
+
+}
+
+.close-btn{
+    width: 30px;
+    height: 30px;
+    border: 2px solid green;
+    border-radius: 50%;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px green;
+    color: rgb(25, 205, 25);
+    text-shadow: 0px 0px 5px rgb(5, 95, 5);
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    
+}
+input{
+    width: 300px;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px green;
+    font-size: 20px;
+}
+.title{
+    text-shadow: 0px 0px 10px green,
+     0px 0px 20px green,
+    0px 0px 30px green,
+    0px 0px 40px green;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <!-- <div class="main">
+        <h1>TODO LIST</h1>
+        <input type="text" id="input">
+        <button onclick="add()">Add</button>
+        </div>
+        <div class="ul">
+        <ul id="list">
+            <li>Good Morning
+                <button onclick="delet(event)">✖️</button>
+            </li>
+        </ul>
+        </div> -->
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <h1 class="text-center title">TODO LIST</h1>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+                    <input type="text" class="ms-1" id="input">
+                    <button onclick="add()" class="btn ms-1" style="border: none;outline: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#75FB4C"><path d="m421-298 283-283-46-45-237 237-120-120-45 45 165 166Zm59 218q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z"/></svg>
+                    </button>
+                    
+                </div>
+                <div class="col-12">
+                    <div class="ul text-center">
+                        <ul id="list">
+                            <li >Good Morning
+                                <button onclick="delet(event)" class="ms-4 close-btn ms-auto ">X</button>
+                            </li>
+                        </ul>
+                        </div>
+                </div>
+               
+            </div>
+        </div>
+    
+    <script>
+       var ul=document.getElementById("list");
+        var input=document.getElementById("input");
+
+        function add(){
+            var listitem=document.createElement("li")
+            listitem.innerHTML=input.value + "<button onclick='delet(event)' class='ms-4 close-btn ms-auto ' > X</button>"
+            ul.append(listitem)
+           
+          
+        }
+
+        function delet(event){
+            event.target.parentElement.remove()
+        }
+
+
+</script>
+    
+    
+</body>
+</html>
